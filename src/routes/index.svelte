@@ -7,7 +7,6 @@
 	}
 
 	h1 {
-		font-family: "Open Sans";
 		font-size: 2.8em;
 		text-transform: uppercase;
 		font-weight: 700;
