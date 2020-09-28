@@ -33,6 +33,10 @@
 			font-size: 4em;
 		}
 	}
+
+	h2 {
+		font-family: "Prompt";
+	}
 </style>
 
 <svelte:head>
@@ -40,6 +44,7 @@
 </svelte:head>
 
 <h1>Great success!</h1>
+<h2>HOME SHOP</h2>
 
 <figure>
 	<img alt="Success Kid" src="successkid.jpg" />
