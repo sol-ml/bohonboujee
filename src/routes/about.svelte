@@ -1,5 +1,5 @@
 <script>
-	import Border from "../components/Border.svelte/";
+	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte/";
 </script>
 
 <svelte:head>
@@ -8,6 +8,6 @@
 
 <h1>About this site</h1>
 
-<Border imgSrc="/images/hero/about_desktop.png" />
+<ImageWithGoldenBorder imgSrc="/images/hero/about_desktop.png" />
 
 <p>This is the 'about' page. There's not much here.</p>
