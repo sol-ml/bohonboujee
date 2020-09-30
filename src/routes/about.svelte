@@ -1,5 +1,5 @@
 <script>
-	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte/";
+	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
 </script>
 
 <svelte:head>
