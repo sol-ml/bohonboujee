@@ -1,3 +1,8 @@
+<script>
+	import Button from "../components/Button.svelte";
+	import Subtittle from "../components/Subtittle.svelte";
+</script>
+
 <style>
 	h1,
 	figure,
@@ -44,14 +49,16 @@
 </svelte:head>
 
 <h1>Great success!</h1>
-<h2>HOME SHOP</h2>
 
-<figure>
+<!-- <figure>
 	<img alt="Success Kid" src="successkid.jpg" />
 	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
+</figure> -->
 
-<p>
-	<strong>Try editing this file (src/routes/index.svelte) to test live
-		reloading.</strong>
-</p>
+<Button>Shop Now</Button>
+<p></p>
+<Button type="light">Shop Now</Button>
+<p></p>
+<Button type="golden">Shop Now</Button>
+
+<Subtittle text="Shopping for " underline="subrayado" />
