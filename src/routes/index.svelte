@@ -1,6 +1,6 @@
 <script>
 	import Button from "../components/Button.svelte";
-	import Subtittle from "../components/Subtittle.svelte";
+	/* 	import Subtittle from "../components/Subtittle.svelte"; */
 </script>
 
 <style>
@@ -55,10 +55,10 @@
 	<figcaption>Have fun with Sapper!</figcaption>
 </figure> -->
 
-<Button>Shop Now</Button>
+<Button>SHOP NOW</Button>
 <p></p>
-<Button type="light">Shop Now</Button>
+<Button type="light">SHOP NOW</Button>
 <p></p>
-<Button type="golden">Shop Now</Button>
+<Button type="golden">SHOP NOW</Button>
 
-<Subtittle text="Shopping for " underline="subrayado" />
+<!-- <Subtittle text="Shopping for " underline="subrayado" /> -->

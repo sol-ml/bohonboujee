@@ -31,6 +31,13 @@
 		background-color: #bda37b;
 		color: white;
 	}
+
+	@media (min-width: 768px) {
+		button {
+			width: 240px;
+			height: 70px;
+		}
+	}
 </style>
 
 <button class="{type}">
