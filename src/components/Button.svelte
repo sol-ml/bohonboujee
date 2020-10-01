@@ -35,7 +35,6 @@
 	@media (min-width: 768px) {
 		button {
 			width: 240px;
-			height: 70px;
 		}
 	}
 </style>
