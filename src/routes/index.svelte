@@ -37,19 +37,12 @@
 			font-size: 4em;
 		}
 	}
-
-	h2 {
-		font-family: "Prompt";
-	}
 </style>
 
 <svelte:head>
 	<title>Sapper project template</title>
 </svelte:head>
 
-<!-- <figure>
-	<img alt="Success Kid" src="successkid.jpg" />
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure> -->
-
-<Subtittle text="SHOPPING FOR" />
+<Subtittle>
+	<h2>SHOPPING FOR</h2>
+</Subtittle>

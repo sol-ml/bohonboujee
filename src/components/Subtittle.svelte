@@ -1,9 +1,5 @@
-<script>
-	export let text;
-</script>
-
 <style>
-	.fuente {
+	h2 {
 		font-family: "Open Sans";
 		font-style: normal;
 		font-weight: bold;
@@ -14,11 +10,14 @@
 	}
 
 	.line {
-		margin-top: 44px;
+		margin-top: 40px;
 		border: 1px solid #bda37b;
 		width: 187px;
+		border-bottom: none;
 	}
 </style>
 
-<h2 class="fuente">{text}</h2>
+<h2>
+	<slot />
+</h2>
 <hr class="line" />
