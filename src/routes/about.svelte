@@ -1,5 +1,5 @@
 <script>
-	/* 	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte"; */
+  import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
 
 	import Hero from "../components/Hero.svelte";
 </script>
@@ -10,11 +10,10 @@
 
 <h1>About this site</h1>
 
-<!-- <ImageWithGoldenBorder imgSrc="/images/hero/about_desktop.png" /> -->
+<ImageWithGoldenBorder imgSrc="/images/hero/about_desktop.png" />
 
 <Hero
 	imgHeroDesktop="/images/hero/about_desktop.png"
 	imgHeroMobile="/images/hero/about_mobile.png"
 />
-
-<p>This is the 'about' page. There's not much here.</p>
+<ImageWithGoldenBorder imgSrc="/images/hero/about_desktop.png" />
