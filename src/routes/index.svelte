@@ -1,57 +1,16 @@
-<style>
-	h1,
-	figure,
-	p {
-		text-align: center;
-		margin: 0 auto;
-	}
+<script>
+	import Subtittle from "../components/Subtittle.svelte";
+	import TitleBackground from "../components/TitleBackground.svelte";
+  import Button from "../components/Button.svelte";
+</script>
 
-	h1 {
-		font-family: "Open Sans";
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
+<Subtittle>SHOPPING FOR</Subtittle>
 
-	figure {
-		margin: 0 0 1em 0;
-	}
+<TitleBackground>Shop Now</TitleBackground>
+<TitleBackground>Shop Accesories</TitleBackground>
 
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
-
-	h2 {
-		font-family: "Prompt";
-	}
-</style>
-
-<svelte:head>
-	<title>Sapper project template</title>
-</svelte:head>
-
-<h1>Great success!</h1>
-<h2>HOME SHOP</h2>
-
-<figure>
-	<img alt="Success Kid" src="successkid.jpg" />
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p>
-	<strong>Try editing this file (src/routes/index.svelte) to test live
-		reloading.</strong>
-</p>
+<Button>SHOP NOW</Button>
+<p></p>
+<Button type="light">SHOP NOW</Button>
+<p></p>
+<Button type="golden">SHOP NOW</Button>
