@@ -4,6 +4,7 @@
 		font-weight: bold;
 		font-size: 37px;
 		text-align: center;
+		line-height: 118.2%;
 		letter-spacing: 0.03em;
 	}
 
