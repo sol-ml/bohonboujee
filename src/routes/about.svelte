@@ -1,11 +1,11 @@
 <script>
+  import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
+	import Hero from "../components/Hero.svelte";
 	import Input from "../components/Input.svelte";
 	import Textarea from "../components/Textarea.svelte";
 
 	let value;
 	let value1 = "hola soy pepito";
-
-	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
 </script>
 
 <svelte:head>
@@ -22,5 +22,7 @@
 
 <ImageWithGoldenBorder imgSrc="/images/hero/about_desktop.png" />
 
-<p>This is the 'about' page. There's not much here.</p>
-
+<Hero
+	imgHeroDesktop="/images/hero/about_desktop.png"
+	imgHeroMobile="/images/hero/about_mobile.png"
+/>
