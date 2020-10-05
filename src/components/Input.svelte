@@ -1,10 +1,10 @@
 <script>
-
+	export let value = "";
+	export let placeholder = "";
 </script>
 
 <style>
 	input {
-		width: 38.51%;
 		font-weight: normal;
 		font-family: "Open Sans";
 		background: #ffffff;
@@ -12,4 +12,4 @@
 	}
 </style>
 
-<input placeholder="enter your email " />
+<input bind:value placeholder="{placeholder}" />
