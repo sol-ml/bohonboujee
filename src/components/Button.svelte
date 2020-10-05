@@ -1,0 +1,43 @@
+<script>
+	export let type = "dark";
+</script>
+
+<style>
+	button {
+		width: 100%;
+		height: 70px;
+		border: none;
+		font-family: "Open Sans";
+		font-size: 20px;
+		font-style: normal;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	.dark {
+		background-color: black;
+		color: white;
+	}
+
+	.light {
+		background-color: white;
+		color: #bda37b;
+		border: 1px solid #bda37b;
+	}
+
+	.golden {
+		background-color: #bda37b;
+		color: white;
+	}
+
+	@media (min-width: 768px) {
+		button {
+			width: 240px;
+		}
+	}
+</style>
+
+<button class="{type}">
+	<slot />
+</button>
