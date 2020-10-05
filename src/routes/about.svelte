@@ -4,6 +4,8 @@
 
 	let value;
 	let value1 = "hola soy pepito";
+
+	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
 </script>
 
 <svelte:head>
@@ -17,3 +19,8 @@
 
 <p>{value}</p>
 <p>{value1}</p>
+
+<ImageWithGoldenBorder imgSrc="/images/hero/about_desktop.png" />
+
+<p>This is the 'about' page. There's not much here.</p>
+
