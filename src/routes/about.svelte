@@ -1,8 +1,10 @@
 <script>
-  import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
+	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
 	import Hero from "../components/Hero.svelte";
 	import Input from "../components/Input.svelte";
 	import Textarea from "../components/Textarea.svelte";
+
+	import Footer from "../components/Footer.svelte";
 
 	let value;
 	let value1 = "hola soy pepito";
@@ -26,3 +28,5 @@
 	imgHeroDesktop="/images/hero/about_desktop.png"
 	imgHeroMobile="/images/hero/about_mobile.png"
 />
+
+<Footer />
