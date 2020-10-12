@@ -69,3 +69,11 @@
 		<div class="iconos"><img src="Group12.png" alt="logo" /></div>
 	</div>
 </section>
+<!-- @media (max-width: 959.88) {
+	.text {
+		margin: 40px 25px 15px;
+	}
+	.iconos {
+		margin-bottom: 35px;
+	}
+} -->

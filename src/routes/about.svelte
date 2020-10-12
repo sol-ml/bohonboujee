@@ -22,7 +22,7 @@
 <p>{value}</p>
 <p>{value1}</p>
 
-<ImageWithGoldenBorder imgSrc="/images/hero/about_desktop.png" />
+<ImageWithGoldenBorder imgSrc="/images/products/bracelet_1.png" />
 
 <Hero
 	imgHeroDesktop="/images/hero/about_desktop.png"
