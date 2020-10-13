@@ -9,7 +9,7 @@
 	}
 
 	.line {
-		margin-top: 40px;
+		margin: 40px auto 50px;
 		border: none;
 		border-top: 1px solid #bda37b;
 		width: 187px;

@@ -1,16 +1,68 @@
 <script>
-	import Subtittle from "../components/Subtittle.svelte";
-	import TitleBackground from "../components/TitleBackground.svelte";
-  import Button from "../components/Button.svelte";
+	import ImgList from "../components/ImgList.svelte";
+	let items = [
+		{
+			title: "BRACELETS",
+			href: "http://www.google.com",
+			imgSrc: "/Images/categories/bracelets.png",
+		},
+
+		{
+			title: "EARRINGS",
+			href: "http://www.mercadolibre.com",
+			imgSrc: "/Images/categories/earrings.png",
+		},
+
+		{
+			title: "NECKLACES",
+			href: "http://www.mercadolibre.com",
+			imgSrc: "/Images/categories/necklaces.png",
+		},
+
+		{
+			title: "HANDBAGS",
+			href: "http://www.mercadolibre.com",
+			imgSrc: "/Images/categories/handbags.png",
+		},
+	];
+
+	let items2 = [
+		{
+			href: "http://www.google.com",
+			imgSrc: "/Images/products/bracelet_1.png",
+		},
+
+		{
+			href: "http://www.mercadolibre.com",
+			imgSrc: "/Images/products/bracelet_2.png",
+		},
+
+		{
+			href: "http://www.mercadolibre.com",
+			imgSrc: "/Images/products/earrings_1.png",
+		},
+		{
+			href: "http://www.mercadolibre.com",
+			imgSrc: "/Images/products/earrings_2.png",
+		},
+		{
+			href: "http://www.mercadolibre.com",
+			imgSrc: "/Images/products/earrings_3.png",
+		},
+		{
+			href: "http://www.mercadolibre.com",
+			imgSrc: "/Images/products/earrings_4.png",
+		},
+		{
+			href: "http://www.mercadolibre.com",
+			imgSrc: "/Images/products/handbag.png",
+		},
+		{
+			href: "http://www.mercadolibre.com",
+			imgSrc: "/Images/products/necklaces.png",
+		},
+	];
 </script>
 
-<Subtittle>SHOPPING FOR</Subtittle>
-
-<TitleBackground>Shop Now</TitleBackground>
-<TitleBackground>Shop Accesories</TitleBackground>
-
-<Button>SHOP NOW</Button>
-<p></p>
-<Button type="light">SHOP NOW</Button>
-<p></p>
-<Button type="golden">SHOP NOW</Button>
+<ImgList subtitle="SHOPPING FOR" buttonText="SHOP NOW" items="{items}" />
+<ImgList subtitle="FEATURED PRODUCTS" items="{items2}" />

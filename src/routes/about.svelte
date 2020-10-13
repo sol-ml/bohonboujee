@@ -1,5 +1,5 @@
 <script>
-  import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
+	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
 	import Hero from "../components/Hero.svelte";
 	import Input from "../components/Input.svelte";
 	import Textarea from "../components/Textarea.svelte";
@@ -20,7 +20,7 @@
 <p>{value}</p>
 <p>{value1}</p>
 
-<ImageWithGoldenBorder imgSrc="/images/hero/about_desktop.png" />
+<ImageWithGoldenBorder imgSrc="/images/products/bracelet_1.png" />
 
 <Hero
 	imgHeroDesktop="/images/hero/about_desktop.png"
