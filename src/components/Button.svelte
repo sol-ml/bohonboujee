@@ -4,6 +4,7 @@
 
 <style>
 	button {
+		width: 100%;
 		height: 70px;
 		border: none;
 		font-family: "Open Sans";
