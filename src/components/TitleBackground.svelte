@@ -11,15 +11,25 @@
 		line-height: 81px;
 		position: relative;
 		margin: 0 20px;
-		display: inline;
 	}
 
 	.background {
 		position: absolute;
 		background: rgba(189, 163, 123, 0.8);
 		width: 100%;
-		height: 70%;
+		height: 60px;
 		bottom: 0;
+	}
+
+	@media (min-width: 768px) {
+		h1 {
+			font-size: 85px;
+			line-height: 98px;
+		}
+
+		.background {
+			height: 74px;
+		}
 	}
 </style>
 
