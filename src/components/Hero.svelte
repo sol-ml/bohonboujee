@@ -4,26 +4,36 @@
 </script>
 
 <style>
+	div {
+		position: relative;
+	}
+
+	img {
+		width: 100%;
+		display: block;
+	}
+
 	@media (max-width: 767.88px) {
 		.imgDesktop {
 			display: none;
 		}
-		.imgMobile {
-			width: 100%;
-		}
 	}
+
 	@media (min-width: 768px) {
-		.imgDesktop {
+		div {
 			width: 89%;
 			margin: auto;
-			display: block;
 			max-width: 1620px;
 		}
+
 		.imgMobile {
 			display: none;
 		}
 	}
 </style>
 
-<img class="imgDesktop" alt="a" src="{imgHeroDesktop}" />
-<img class="imgMobile" alt="a" src="{imgHeroMobile}" />
+<div>
+	<img class="imgDesktop" alt="a" src="{imgHeroDesktop}" />
+	<img class="imgMobile" alt="a" src="{imgHeroMobile}" />
+	<slot />
+</div>
