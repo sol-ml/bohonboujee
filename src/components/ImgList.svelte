@@ -11,9 +11,10 @@
 <style>
 	a {
 		text-decoration: none;
+		display: block;
 	}
 	.boton {
-		margin: 0 50px;
+		margin: 35px 50px 0;
 		display: flex;
 		justify-content: center;
 	}
@@ -33,7 +34,7 @@
 		}
 
 		li {
-			flex-basis: 45%;
+			flex-basis: calc(50% - 30px);
 			margin-bottom: 15px;
 		}
 
@@ -47,14 +48,18 @@
 	}
 
 	@media (min-width: 768px) {
+		.boton {
+			margin-top: 50px;
+		}
 		ul {
 			padding: 0 100px;
 		}
 
 		li {
-			flex-basis: 21%;
-			margin: 15px 15px 15px;
+			flex-basis: calc(25% - 30px);
+			margin: 0 15px 30px;
 		}
+
 		li:nth-child(4n + 1) {
 			margin-left: 0;
 		}
