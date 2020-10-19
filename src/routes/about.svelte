@@ -1,9 +1,9 @@
 <script>
-  import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
+	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
 	import Hero from "../components/Hero.svelte";
 	import Input from "../components/Input.svelte";
 	import Textarea from "../components/Textarea.svelte";
-
+	import Label from "../components/Label.svelte";
 	let value;
 	let value1 = "hola soy pepito";
 </script>
@@ -26,3 +26,7 @@
 	imgHeroDesktop="/images/hero/about_desktop.png"
 	imgHeroMobile="/images/hero/about_mobile.png"
 />
+
+<Label label="Name">
+	<Input bind:value placeholder=" " />
+</Label>
