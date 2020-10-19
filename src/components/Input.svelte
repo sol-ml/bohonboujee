@@ -5,13 +5,13 @@
 
 <style>
 	input {
-		font-weight: normal;
 		font-family: "Open Sans";
 		background: #ffffff;
 		border: 1px solid #bda37b;
 		width: 100%;
 		height: 70px;
 		font-size: 26px;
+		line-height: 35px;
 		padding: 0 25px;
 		box-sizing: border-box;
 	}

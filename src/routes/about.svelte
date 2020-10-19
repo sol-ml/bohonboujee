@@ -3,7 +3,6 @@
 	import Hero from "../components/Hero.svelte";
 	import Input from "../components/Input.svelte";
 	import Textarea from "../components/Textarea.svelte";
-
 	import Footer from "../components/Footer.svelte";
 
 	let value;

@@ -1,30 +1,28 @@
-<script>
-
-</script>
-
 <style>
-	section {
+	footer {
 		font-family: Open Sans;
 		font-size: 22px;
 		line-height: 30px;
 		text-align: center;
 		letter-spacing: 0.03em;
-		display: flex;
-		flex-direction: column;
 		color: #ffffff;
 		background: #000000;
 	}
+
 	nav ul li {
 		display: inline;
 	}
+
 	.text {
 		margin: 40px 25px 15px;
 	}
+
 	ul {
 		margin: 0;
-		padding: 0px;
+		padding: 0;
 	}
-	.iconos {
+
+	.icons {
 		margin-bottom: 35px;
 	}
 
@@ -39,16 +37,18 @@
 			text-align: right;
 			align-items: center;
 		}
+
 		.text {
 			margin: 10px 0 15px;
 		}
-		.iconos {
+
+		.icons {
 			margin: 0;
 		}
 	}
 </style>
 
-<section>
+<footer>
 	<div class="container">
 		<div class="text">
 			<div>
@@ -66,14 +66,6 @@
 					Creative</a>
 			</div>
 		</div>
-		<div class="iconos"><img src="Group12.png" alt="logo" /></div>
+		<div class="icons"><img src="Group12.png" alt="logo" /></div>
 	</div>
-</section>
-<!-- @media (max-width: 959.88) {
-	.text {
-		margin: 40px 25px 15px;
-	}
-	.iconos {
-		margin-bottom: 35px;
-	}
-} -->
+</footer>

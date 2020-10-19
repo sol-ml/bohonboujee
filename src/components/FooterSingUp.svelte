@@ -87,7 +87,6 @@
 		}
 
 		.inputButton {
-			text-align: right;
 			width: 50%;
 			padding-top: 70px;
 			padding-bottom: 65px;
@@ -104,7 +103,6 @@
 		</div>
 		<div class="inputButton">
 			<Input placeholder="enter your email " />
-
 			<Button>SING UP</Button>
 		</div>
 	</div>
