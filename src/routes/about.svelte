@@ -1,8 +1,9 @@
 <script>
-  import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
+	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
 	import Hero from "../components/Hero.svelte";
 	import Input from "../components/Input.svelte";
 	import Textarea from "../components/Textarea.svelte";
+	import Header from "../components/Header.svelte";
 
 	let value;
 	let value1 = "hola soy pepito";
@@ -13,7 +14,7 @@
 </svelte:head>
 
 <h1>About this site</h1>
-
+<Header />
 <Input bind:value placeholder="enter your email " />
 <Textarea bind:value="{value1}" />
 
