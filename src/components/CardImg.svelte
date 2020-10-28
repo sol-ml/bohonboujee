@@ -10,8 +10,9 @@
 
 <style>
 	section {
-		background: rgb(189, 163, 123) url("/images/girl_background.png");
+		background: rgb(145, 142, 139) url("/images/girl_background.png");
 		background-blend-mode: soft-light;
+		background-size: cover;
 	}
 	.imageContainer {
 		position: relative;
