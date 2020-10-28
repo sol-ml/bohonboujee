@@ -7,34 +7,70 @@
 </script>
 
 <style>
-	.position {
+	.positionTitle {
 		position: absolute;
 	}
 
-	img {
-		width: 100%;
+	.img {
+		position: absolute;
 	}
+
 	@media (max-width: 767.88px) {
-		.position {
-			padding-left: 25%;
-			bottom: 13%;
+		.containerImgTitle {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 50%;
+		}
+
+		.img {
+			width: 110%;
+			top: 50%;
+		}
+
+		.positionTitle {
+			left: 23%;
+			bottom: -21%;
+		}
+
+		.TitleDesktop {
+			display: none;
 		}
 	}
 
 	@media (min-width: 768px) {
-		/* .container {
+		.containerImgTitle {
 			max-width: 1620px;
 			margin: auto;
-		} */
-		.position {
-			padding-left: 13%;
+			margin-bottom: 15%;
+		}
+
+		.img {
+			top: 36%;
+			width: 50%;
+			left: -3%;
+		}
+
+		.positionTitle {
+			left: 7%;
+			bottom: -11%;
+		}
+
+		.TitleMobile {
+			display: none;
 		}
 	}
 </style>
 
 <Hero imgHeroDesktop="{imgHeroDesktop}" imgHeroMobile="{imgHeroMobile}">
-	<img class="img" alt="" src="{imgHeroHome}" />
-	<div class="position">
-		<TitleBackground>Shop Now</TitleBackground>
+	<div class="containerImgTitle">
+		<img class="img" alt="" src="{imgHeroHome}" />
+		<div class="positionTitle">
+			<div class="TitleMobile">
+				<TitleBackground>Shop Now</TitleBackground>
+			</div>
+			<div class="TitleDesktop">
+				<TitleBackground>Shop Accessories</TitleBackground>
+			</div>
+		</div>
 	</div>
 </Hero>
