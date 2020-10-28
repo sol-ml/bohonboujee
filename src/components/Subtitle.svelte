@@ -1,3 +1,7 @@
+<script>
+	export let left;
+</script>
+
 <style>
 	h2 {
 		font-family: "Open Sans";
@@ -14,9 +18,14 @@
 		border-top: 1px solid #bda37b;
 		width: 187px;
 	}
+
+	.position {
+		text-align: left;
+		margin-left: 0;
+	}
 </style>
 
-<h2>
+<h2 class="{left}">
 	<slot />
 </h2>
-<hr class="line" />
+<hr class="line {left}" />
