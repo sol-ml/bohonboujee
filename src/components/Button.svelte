@@ -9,9 +9,7 @@
 		border: none;
 		font-family: "Open Sans";
 		font-size: 20px;
-		font-style: normal;
 		font-weight: bold;
-		text-align: center;
 		text-decoration: underline;
 	}
 
