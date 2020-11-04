@@ -12,10 +12,12 @@
 		font-size: 24px;
 		line-height: 36px;
 		letter-spacing: 0.03em;
+		color: #000000;
 	}
 
 	.price {
 		color: #bda37b;
+		font-weight: 700;
 	}
 
 	a {
