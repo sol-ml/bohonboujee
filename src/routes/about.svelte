@@ -24,13 +24,13 @@
 <ImageWithGoldenBorder imgSrc="/images/hero/about_desktop.png" />
 
 <HeroTitle
-	imgHeroDesktop="/images/hero/contact_desktop.png"
-	imgHeroMobile="/images/hero/about_mobile.png"
+	desktopImgSrc="/images/hero/contact_desktop.png"
+	mobileImgSrc="/images/hero/about_mobile.png"
 	title="About Steph"
 />
 
 <HomeHero
-	imgHeroHome="/images/hero/home_photos.png"
-	imgHeroMobile="/images/hero/home_mobile.png"
-	imgHeroDesktop="/images/hero/home_desktop.png"
+	homeImgSrc="/images/hero/home_photos.png"
+	mobileImgSrc="/images/hero/home_mobile.png"
+	desktopImgSrc="/images/hero/home_desktop.png"
 />

@@ -1,8 +1,8 @@
 <script>
 	import Hero from "./Hero.svelte";
 	import TitleBackground from "./TitleBackground.svelte";
-	export let imgHeroDesktop;
-	export let imgHeroMobile;
+	export let desktopImgSrc;
+	export let mobileImgSrc;
 	export let title;
 	export let hideTitleOnDesktop;
 </script>
@@ -30,7 +30,7 @@
 	}
 </style>
 
-<Hero imgHeroDesktop="{imgHeroDesktop}" imgHeroMobile="{imgHeroMobile}">
+<Hero desktopImgSrc="{desktopImgSrc}" mobileImgSrc="{mobileImgSrc}">
 	<div class="position" class:hideTitleOnDesktop>
 		<TitleBackground>{title}</TitleBackground>
 	</div>

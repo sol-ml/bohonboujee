@@ -1,6 +1,6 @@
 <script>
-	export let imgHeroDesktop;
-	export let imgHeroMobile;
+	export let desktopImgSrc;
+	export let mobileImgSrc;
 </script>
 
 <style>
@@ -14,7 +14,7 @@
 	}
 
 	@media (max-width: 767.88px) {
-		.imgDesktop {
+		.desktopImg {
 			display: none;
 		}
 	}
@@ -26,14 +26,14 @@
 			max-width: 1620px;
 		}
 
-		.imgMobile {
+		.mobileImg {
 			display: none;
 		}
 	}
 </style>
 
 <div>
-	<img class="imgDesktop" alt="a" src="{imgHeroDesktop}" />
-	<img class="imgMobile" alt="a" src="{imgHeroMobile}" />
+	<img class="desktopImg" alt="" src="{desktopImgSrc}" />
+	<img class="mobileImg" alt="" src="{mobileImgSrc}" />
 	<slot />
 </div>

@@ -1,22 +1,18 @@
 <script>
 	import TitleBackground from "../components/TitleBackground.svelte";
 	import Hero from "./Hero.svelte";
-	export let imgHeroHome;
-	export let imgHeroDesktop;
-	export let imgHeroMobile;
+	export let homeImgSrc;
+	export let desktopImgSrc;
+	export let mobileImgSrc;
 </script>
 
 <style>
-	.positionTitle {
-		position: absolute;
-	}
-
 	.img {
 		position: absolute;
 	}
 
 	@media (max-width: 767.88px) {
-		.containerImgTitle {
+		.container {
 			display: flex;
 			justify-content: center;
 			margin-bottom: 50%;
@@ -27,18 +23,19 @@
 			top: 50%;
 		}
 
-		.positionTitle {
+		.mobileTitle {
+			position: absolute;
 			left: 23%;
 			bottom: -21%;
 		}
 
-		.TitleDesktop {
+		.desktopTitle {
 			display: none;
 		}
 	}
 
 	@media (min-width: 768px) {
-		.containerImgTitle {
+		.container {
 			max-width: 1620px;
 			margin: auto;
 			margin-bottom: 15%;
@@ -50,27 +47,26 @@
 			left: -3%;
 		}
 
-		.positionTitle {
+		.desktopTitle {
+			position: absolute;
 			left: 7%;
 			bottom: -11%;
 		}
 
-		.TitleMobile {
+		.mobileTitle {
 			display: none;
 		}
 	}
 </style>
 
-<Hero imgHeroDesktop="{imgHeroDesktop}" imgHeroMobile="{imgHeroMobile}">
-	<div class="containerImgTitle">
-		<img class="img" alt="" src="{imgHeroHome}" />
-		<div class="positionTitle">
-			<div class="TitleMobile">
-				<TitleBackground>Shop Now</TitleBackground>
-			</div>
-			<div class="TitleDesktop">
-				<TitleBackground>Shop Accessories</TitleBackground>
-			</div>
+<Hero desktopImgSrc="{desktopImgSrc}" mobileImgSrc="{mobileImgSrc}">
+	<div class="container">
+		<img class="img" alt="" src="{homeImgSrc}" />
+		<div class="mobileTitle">
+			<TitleBackground>Shop Now</TitleBackground>
+		</div>
+		<div class="desktopTitle">
+			<TitleBackground>Shop Accessories</TitleBackground>
 		</div>
 	</div>
 </Hero>
