@@ -9,7 +9,7 @@
 		font-family: Prompt;
 		font-size: 26px;
 		line-height: 35px;
-		padding: 16px 25px;
+		padding: 16px 0;
 		box-sizing: border-box;
 	}
 </style>

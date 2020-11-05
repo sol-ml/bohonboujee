@@ -2,8 +2,10 @@
 	import Hero from "../components/Hero.svelte";
 	import Subtittle from "../components/Subtittle.svelte";
 	import Input from "../components/Input.svelte";
+	import Label from "../components/Label.svelte";
 	import Textarea from "../components/Textarea.svelte";
 	import Button from "../components/Button.svelte";
+	import Footer from "../components/Footer.svelte";
 </script>
 
 <style>
@@ -19,6 +21,11 @@
 	.button {
 		margin-top: 65px;
 	}
+	.textarea {
+		display: grid;
+		grid-template-rows: 35px 441px;
+		padding-right: 0%;
+	}
 
 	@media (min-width: 768px) {
 		section {
@@ -29,11 +36,15 @@
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			grid-gap: 25px;
-			margin: 65px auto;
+			margin: 65px auto 25px;
 		}
 		.item {
 			display: grid;
 			grid-column: 1 / 3;
+		}
+
+		.textarea {
+			grid-template-rows: 35px 285px;
 		}
 		.button {
 			margin-top: 45px;
@@ -47,16 +58,28 @@
 <section>
 	<Subtittle>DROP ME A LINE</Subtittle>
 	<div class="input">
-		<Input />
-		<Input />
+		<div>
+			<Label>Name</Label>
+			<Input />
+		</div>
+		<div>
+			<Label>Email</Label>
+			<Input />
+		</div>
 		<div class="item">
+			<Label>Telephone Number</Label>
 			<Input />
 		</div>
 	</div>
 	<!-- TextArea no le puse estilo, esperando los cambios. Para terminar -->
-	<Textarea />
+	<div class="textarea">
+		<Label>Message</Label>
+		<Textarea />
+	</div>
 
 	<div class="button">
 		<Button type="golden">SUBMIT</Button>
 	</div>
 </section>
+
+<Footer />
