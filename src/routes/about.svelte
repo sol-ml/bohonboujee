@@ -1,5 +1,7 @@
 <script>
 	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
+	import HeroTitle from "../components/HeroTitle.svelte";
+	import HomeHero from "../components/HomeHero.svelte";
 	import Hero from "../components/Hero.svelte";
 	import Input from "../components/Input.svelte";
 	import Textarea from "../components/Textarea.svelte";
@@ -24,6 +26,19 @@
 
 <ImageWithGoldenBorder imgSrc="/images/products/bracelet_1.png" />
 
+
+<HeroTitle
+	desktopImgSrc="/images/hero/contact_desktop.png"
+	mobileImgSrc="/images/hero/about_mobile.png"
+	title="About Steph"
+/>
+
+<HomeHero
+	homeImgSrc="/images/hero/home_photos.png"
+	mobileImgSrc="/images/hero/home_mobile.png"
+	desktopImgSrc="/images/hero/home_desktop.png"
+/>
+
 <Hero
 	imgHeroDesktop="/images/hero/about_desktop.png"
 	imgHeroMobile="/images/hero/about_mobile.png"
@@ -34,4 +49,3 @@
 </Label>
 
 <Footer />
-
