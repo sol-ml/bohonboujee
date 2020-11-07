@@ -1,5 +1,59 @@
 <script>
 	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
+	import List from "../components/List.svelte";
+
+	let products = [
+		{
+			imgSrc: "/images/products/necklaces.png",
+			text: "Minimal Double-Strand Hoop Pendant Necklace",
+			price: "$35",
+			id: "?hl=es",
+		},
+
+		{
+			imgSrc: "/images/products/handbag.png",
+			text: "Minimal Double-Strand Hoop Pendant Necklace",
+			price: "$35",
+			id: "?hl=es",
+		},
+
+		{
+			imgSrc: "/images/products/earrings_1.png",
+			text: "Minimal Double-Strand Hoop Pendant Necklace",
+			price: "$35",
+		},
+
+		{
+			imgSrc: "/images/products/earrings_2.png",
+			text: "Minimal Double-Strand Hoop Pendant Necklace",
+			price: "$35",
+		},
+
+		{
+			imgSrc: "/images/products/earrings_3.png",
+			text: "Minimal Double-Strand Hoop Pendant Necklace",
+			price: "$35",
+		},
+
+		{
+			imgSrc: "/images/products/bracelet_1.png",
+			text: "Minimal Double-Strand Hoop Pendant Necklace",
+			price: "$35",
+		},
+
+		{
+			imgSrc: "/images/products/earrings_4.png",
+			text: "Minimal Double-Strand Hoop Pendant Necklace",
+			price: "$35",
+		},
+
+		{
+			imgSrc: "/images/products/bracelet_2.png",
+			text: "Minimal Double-Strand Hoop Pendant Necklace",
+			price: "$35",
+		},
+	];
+
 	import ImagesWithTitleLooking from "../components/ImagesWithTitleLooking.svelte";
 	import Header from "../components/Header.svelte";
 	import HeroTitle from "../components/HeroTitle.svelte";
@@ -45,6 +99,8 @@
 	imgHeroMobile="/images/hero/about_mobile.png"
 />
 
+<List products="{products}" />
+
 <ImagesWithTitleLooking />
 
 <Label label="Name">
@@ -52,3 +108,4 @@
 </Label>
 
 <Footer />
+
