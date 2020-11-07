@@ -3,7 +3,7 @@
 		position: relative;
 	}
 
-	.logocontainer {
+	.logoContainer {
 		display: flex;
 		justify-content: center;
 	}
@@ -12,7 +12,7 @@
 		position: absolute;
 	}
 
-	.menucontainer {
+	.menuContainer {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -28,7 +28,7 @@
 			top: 13px;
 		}
 
-		.menucontainer {
+		.menuContainer {
 			height: 101px;
 			flex-direction: row-reverse;
 			padding: 0 25px;
@@ -37,6 +37,7 @@
 		nav {
 			display: none;
 		}
+
 		.menu {
 			height: 23px;
 		}
@@ -49,7 +50,7 @@
 			max-width: 168px;
 		}
 
-		.menucontainer {
+		.menuContainer {
 			height: 85px;
 			max-width: 1620px;
 			margin: auto;
@@ -83,10 +84,10 @@
 </style>
 
 <header>
-	<div class="logocontainer">
+	<div class="logoContainer">
 		<img class="logo" alt="" src="/menu/logo.png" />
 	</div>
-	<div class="menucontainer">
+	<div class="menuContainer">
 		<nav>
 			<ul>
 				<li><a href="www.google.com.ar">HOME</a></li>
