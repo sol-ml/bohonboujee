@@ -14,7 +14,8 @@
 	}
 
 	.text {
-		margin: 40px 25px 15px;
+		margin: 0 25px 15px;
+		padding-top: 40px;
 	}
 
 	ul {
@@ -23,7 +24,7 @@
 	}
 
 	.icons {
-		margin-bottom: 35px;
+		padding-bottom: 35px;
 	}
 
 	@media (min-width: 960px) {
@@ -40,10 +41,12 @@
 
 		.text {
 			margin: 10px 0 15px;
+			padding-top: 0;
 		}
 
 		.icons {
 			margin: 0;
+			padding: 0;
 		}
 	}
 </style>
