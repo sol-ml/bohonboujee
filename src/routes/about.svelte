@@ -1,5 +1,6 @@
 <script>
 	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
+	import Header from "../components/Header.svelte";
 	import HeroTitle from "../components/HeroTitle.svelte";
 	import HomeHero from "../components/HomeHero.svelte";
 	import Hero from "../components/Hero.svelte";
@@ -17,7 +18,7 @@
 </svelte:head>
 
 <h1>About this site</h1>
-
+<Header />
 <Input bind:value placeholder="enter your email " />
 <Textarea bind:value="{value1}" />
 
@@ -25,7 +26,6 @@
 <p>{value1}</p>
 
 <ImageWithGoldenBorder imgSrc="/images/products/bracelet_1.png" />
-
 
 <HeroTitle
 	desktopImgSrc="/images/hero/contact_desktop.png"
