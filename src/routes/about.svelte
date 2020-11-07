@@ -1,5 +1,6 @@
 <script>
 	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
+	import ImagesWithTitleLooking from "../components/ImagesWithTitleLooking.svelte";
 	import Header from "../components/Header.svelte";
 	import HeroTitle from "../components/HeroTitle.svelte";
 	import HomeHero from "../components/HomeHero.svelte";
@@ -43,6 +44,8 @@
 	imgHeroDesktop="/images/hero/about_desktop.png"
 	imgHeroMobile="/images/hero/about_mobile.png"
 />
+
+<ImagesWithTitleLooking />
 
 <Label label="Name">
 	<Input bind:value placeholder=" " />
