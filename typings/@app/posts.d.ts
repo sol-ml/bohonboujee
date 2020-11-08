@@ -1,11 +1,10 @@
-declare interface PostTitle {
-	title: string;
+declare interface ProductLookup {
+	id: string;
+	imgSrc: string;
+	text: string;
+	price: string;
 }
 
-declare interface PostLookup extends PostTitle {
-	slug: string;
-}
-
-declare interface PostInfo extends PostTitle {
-	html: string;
+declare interface Product extends ProductLookup {
+	description: string;
 }

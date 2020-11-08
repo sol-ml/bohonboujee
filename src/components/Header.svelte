@@ -1,3 +1,7 @@
+<script lang="ts">
+	export let segment: string;
+</script>
+
 <style>
 	header {
 		position: relative;
@@ -20,6 +24,14 @@
 
 	.icons {
 		height: 25px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.underline {
+		text-decoration: underline;
 	}
 
 	@media (max-width: 767.88px) {
@@ -90,10 +102,17 @@
 	<div class="menuContainer">
 		<nav>
 			<ul>
-				<li><a href="www.google.com.ar">HOME</a></li>
-				<li><a href="www.google.com.ar">ABOUT</a></li>
-				<li><a href="www.google.com.ar">SHOP</a></li>
-				<li><a href="www.google.com.ar">CONTACT</a></li>
+				<li><a href="." class:underline="{segment === undefined}">HOME</a></li>
+				<li>
+					<a href="about" class:underline="{segment === 'about'}">ABOUT</a>
+				</li>
+				<li><a href="shop" class:underline="{segment === 'shop'}">SHOP</a></li>
+				<li>
+					<a
+						href="contact"
+						class:underline="{segment === 'contact'}"
+					>CONTACT</a>
+				</li>
 			</ul>
 		</nav>
 		<img class="menu" alt="" src="/menu/Menu.png" />

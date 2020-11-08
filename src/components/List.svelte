@@ -1,6 +1,6 @@
 <script>
 	import ProductList from "./ProductList.svelte";
-	export let products;
+	export let products = [];
 </script>
 
 <style>
