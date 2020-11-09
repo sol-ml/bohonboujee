@@ -1,29 +1,39 @@
 <script>
-	export let imgHeroDesktop;
-	export let imgHeroMobile;
+	export let desktopImgSrc;
+	export let mobileImgSrc;
 </script>
 
 <style>
+	div {
+		position: relative;
+	}
+
+	img {
+		width: 100%;
+		display: block;
+	}
+
 	@media (max-width: 767.88px) {
-		.imgDesktop {
+		.desktopImg {
 			display: none;
 		}
-		.imgMobile {
-			width: 100%;
-		}
 	}
+
 	@media (min-width: 768px) {
-		.imgDesktop {
+		div {
 			width: 89%;
 			margin: auto;
-			display: block;
 			max-width: 1620px;
 		}
-		.imgMobile {
+
+		.mobileImg {
 			display: none;
 		}
 	}
 </style>
 
-<img class="imgDesktop" alt="a" src="{imgHeroDesktop}" />
-<img class="imgMobile" alt="a" src="{imgHeroMobile}" />
+<div>
+	<img class="desktopImg" alt="" src="{desktopImgSrc}" />
+	<img class="mobileImg" alt="" src="{mobileImgSrc}" />
+	<slot />
+</div>

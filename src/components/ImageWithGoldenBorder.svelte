@@ -7,6 +7,8 @@
 		width: 100%;
 		display: block;
 		border: 1px solid #bda37b;
+		display: block;
+		width: 100%;
 	}
 </style>
 
