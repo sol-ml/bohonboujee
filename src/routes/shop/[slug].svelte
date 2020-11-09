@@ -4,15 +4,16 @@
 	}: {
 		params: { slug: string };
 	}): Promise<{
-		post: PostInfo;
+		product: Product;
 	}> {
 		// the `slug` parameter is available because
 		// this file is called [slug].svelte
-		const res = await this.fetch(`blog/${params.slug}.json`);
+		const res: Response = await this.fetch(`shop/${params.slug}.json`);
+
 		const data = await res.json();
 
 		if (res.status === 200) {
-			return { post: data };
+			return { product: data };
 		} else {
 			this.error(res.status, data.message);
 		}
@@ -20,7 +21,7 @@
 </script>
 
 <script lang="ts">
-	export let post: PostInfo;
+	export let product: Product;
 </script>
 
 <style>
@@ -60,11 +61,9 @@
 </style>
 
 <svelte:head>
-	<title>{post.title}</title>
+	<title>{product.text}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
+<h1>{product.text}</h1>
 
-<div class="content">
-	{@html post.html}
-</div>
+<div class="content">{product.price}</div>

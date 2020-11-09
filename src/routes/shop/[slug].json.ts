@@ -1,10 +1,10 @@
 import type { Request /* , Next */ } from "polka";
 import type { ServerResponse } from "http";
-import posts from "./_posts";
+import products from "./_products";
 
 const lookup = new Map();
-posts.forEach((post) => {
-	lookup.set(post.slug, JSON.stringify(post));
+products.forEach((product) => {
+	lookup.set(product.slug, JSON.stringify(product));
 });
 
 export function get(

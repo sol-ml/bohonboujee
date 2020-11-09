@@ -1,12 +1,14 @@
 import type { Request } from "polka";
 import type { ServerResponse } from "http";
-import posts from "./_posts";
+import products from "./_products";
 
 const contents = JSON.stringify(
-	posts.map((post) => {
+	products.map((product) => {
 		return {
-			title: post.title,
-			slug: post.slug,
+			slug: product.slug,
+			imgSrc: product.imgSrc,
+			text: product.text,
+			price: product.price,
 		};
 	}),
 );
