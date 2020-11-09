@@ -13,7 +13,7 @@
 		text-decoration: none;
 		display: block;
 	}
-	.boton {
+	.button {
 		margin: 35px 50px 0;
 		display: flex;
 		justify-content: center;
@@ -48,11 +48,14 @@
 	}
 
 	@media (min-width: 768px) {
-		.boton {
+		.button {
 			margin-top: 50px;
 		}
 		ul {
-			padding: 0 100px;
+			padding: 0;
+			width: 89%;
+			max-width: 1620px;
+			margin: auto;
 		}
 
 		li {
@@ -81,7 +84,7 @@
 </ul>
 
 {#if buttonText}
-	<a href="{buttonHref}" class="boton">
+	<a href="{buttonHref}" class="button">
 		<Button type="golden">{buttonText}</Button>
 	</a>
 {/if}
