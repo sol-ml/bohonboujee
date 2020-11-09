@@ -12,7 +12,7 @@
 	section {
 		margin: 65px 25px 95px;
 	}
-	.input {
+	.inputContainer {
 		display: grid;
 		row-gap: 20px;
 		margin: 20px auto;
@@ -23,7 +23,6 @@
 	}
 	.textarea {
 		display: grid;
-		grid-template-rows: 35px 441px;
 		padding-right: 0%;
 	}
 
@@ -32,20 +31,17 @@
 			margin: 120px 270px 90px;
 			max-width: 1620px;
 		}
-		.input {
+		.inputContainer {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			grid-gap: 25px;
 			margin: 65px auto 25px;
 		}
-		.item {
+		.telephoneContainer {
 			display: grid;
 			grid-column: 1 / 3;
 		}
 
-		.textarea {
-			grid-template-rows: 35px 285px;
-		}
 		.button {
 			margin-top: 45px;
 		}
@@ -57,24 +53,27 @@
 
 <section>
 	<Subtittle>DROP ME A LINE</Subtittle>
-	<div class="input">
+	<div class="inputContainer">
 		<div>
-			<Label>Name</Label>
-			<Input />
+			<Label label="Name">
+				<Input />
+			</Label>
 		</div>
 		<div>
-			<Label>Email</Label>
-			<Input />
+			<Label label="Email">
+				<Input />
+			</Label>
 		</div>
-		<div class="item">
-			<Label>Telephone Number</Label>
-			<Input />
+		<div class="telephoneContainer">
+			<Label label="Telephone Number">
+				<Input />
+			</Label>
 		</div>
 	</div>
-	<!-- TextArea no le puse estilo, esperando los cambios. Para terminar -->
 	<div class="textarea">
-		<Label>Message</Label>
-		<Textarea />
+		<Label label="Message">
+			<Textarea />
+		</Label>
 	</div>
 
 	<div class="button">
