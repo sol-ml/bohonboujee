@@ -10,11 +10,11 @@
 
 <style>
 	section {
-		background: rgb(145, 142, 139) url("/images/girl_background.png");
+		background: rgb(189, 163, 123) url("/images/girl_background.png");
 		background-blend-mode: soft-light;
 		background-size: cover;
 	}
-	.imageContainer {
+	.imagePosition {
 		position: relative;
 	}
 	.imageTitleContainer {
@@ -73,7 +73,7 @@
 		.paragraphContainer {
 			margin: 60px 0 70px;
 		}
-		.imageContainer2 {
+		.imagePosition {
 			display: inline-block;
 			position: relative;
 		}
@@ -85,7 +85,7 @@
 
 <section>
 	<div class="imageContainer">
-		<div class="imageContainer2">
+		<div class="imagePosition">
 			<img alt="girl.png" src="Images/girl.png" />
 			<div class="imageTitleContainer">
 				<TitleBackground>{imageTitle}</TitleBackground>
@@ -94,7 +94,7 @@
 	</div>
 
 	<div class="textContainer">
-		<Subtitle left="position">{title}</Subtitle>
+		<Subtitle position="position">{title}</Subtitle>
 		<div class="paragraphContainer">
 			{#each paragraphs as paragraph}
 				<p>{paragraph}</p>

@@ -1,5 +1,5 @@
 <script>
-	export let left;
+	export let position;
 </script>
 
 <style>
@@ -19,13 +19,13 @@
 		width: 187px;
 	}
 
-	.position {
+	.left {
 		text-align: left;
 		margin-left: 0;
 	}
 </style>
 
-<h2 class="{left}">
+<h2 class="{position}">
 	<slot />
 </h2>
-<hr class="line {left}" />
+<hr class="line {position}" />
