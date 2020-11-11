@@ -5,6 +5,8 @@
 <style>
 	img {
 		border: 1px solid #bda37b;
+		display: block;
+		width: 100%;
 	}
 </style>
 
