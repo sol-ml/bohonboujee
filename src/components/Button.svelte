@@ -1,5 +1,6 @@
 <script>
 	export let type = "dark";
+	export let size = "defoult";
 </script>
 
 <style>
@@ -33,9 +34,13 @@
 		button {
 			width: 240px;
 		}
+
+		button {
+			width: 556px;
+		}
 	}
 </style>
 
-<button class="{type}">
+<button class="{type} {size}">
 	<slot />
 </button>

@@ -1,6 +1,7 @@
 <script>
 	import ImageWithGoldenBorder from "../components/ImageWithGoldenBorder.svelte";
 	import Subtittle from "../components/Subtittle.svelte";
+	import ButtonIcons from "../components/ButtonIcons.svelte";
 	import Button from "../components/Button.svelte";
 	import Footer from "../components/Footer.svelte";
 </script>
@@ -17,20 +18,24 @@
 		color: #bda37b;
 		margin-bottom: 25px;
 	}
+	.bigImg {
+		grid-column: 1 / 4;
+		border-bottom: solid 6px #bda37b;
+		display: flex;
+	}
 
 	.orderImg {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	.bigImg {
-		grid-column: 1 / 4;
-		border-bottom: solid 6px #bda37b;
-	}
 
 	.lightButton {
 		margin: 16px 0;
 	}
-
+	.buttonIcons {
+		display: flex;
+		margin-top: 30px;
+	}
 	@media (max-width: 768px) {
 		section {
 			margin: 35px 25px 130px;
@@ -40,10 +45,7 @@
 			grid-template-columns: 1fr 1fr 1fr;
 			grid-gap: 25px 6px;
 		}
-		.bigImg {
-			grid-column: 1 / 4;
-			border-bottom: solid 6px #bda37b;
-		}
+
 		.imgNone {
 			display: none;
 		}
@@ -51,7 +53,7 @@
 
 	@media (min-width: 768px) {
 		section {
-			margin-top: 225px;
+			margin-top: 135px;
 		}
 
 		.imgContainer {
@@ -70,7 +72,7 @@
 		.orderImg,
 		.orderText {
 			width: 40%;
-			/* max-width: 700px; */
+			max-width: 1620px;
 		}
 
 		.orderText {
@@ -79,6 +81,9 @@
 			text-align: left;
 		}
 		.lightButton {
+			margin-top: 50px;
+		}
+		.buttonIcons {
 			margin-top: 50px;
 		}
 	}
@@ -107,10 +112,16 @@
 				at the base of the hook. Great for evening wear or a sunny outdoor
 				wedding.
 			</p>
+
 			<div class="lightButton">
-				<Button type="light">ADD TO CART</Button>
+				<Button type="light" size="button">ADD TO CART</Button>
 			</div>
 			<Button type="golden">BUY IT NOW</Button>
+			<div class="buttonIcons">
+				<ButtonIcons imgSrc="/images/products/facebook.png" Text="SHARE" />
+				<ButtonIcons imgSrc="/images/products/twitter.png" Text="TWEET" />
+				<ButtonIcons imgSrc="/images/products/pinterest.png" Text="PINT IT" />
+			</div>
 		</div>
 	</div>
 </section>
