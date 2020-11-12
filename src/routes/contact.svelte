@@ -1,5 +1,5 @@
 <script>
-	import Hero from "../components/Hero.svelte";
+	import HeroTitle from "../components/HeroTitle.svelte";
 	import Subtittle from "../components/Subtittle.svelte";
 	import Input from "../components/Input.svelte";
 	import Label from "../components/Label.svelte";
@@ -48,8 +48,11 @@
 	}
 </style>
 
-<Hero imgHeroMobile="/images/hero/contact_mobile.png" />
-<Hero imgHeroDesktop="/images/hero/contact_desktop.png" />
+<HeroTitle
+	mobileImgSrc="/images/hero/contact_mobile.png"
+	desktopImgSrc="/images/hero/contact_desktop.png"
+	title="Contact"
+/>
 
 <section>
 	<Subtittle>DROP ME A LINE</Subtittle>
