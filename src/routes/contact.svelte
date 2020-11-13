@@ -6,6 +6,10 @@
 	import Textarea from "../components/Textarea.svelte";
 	import Button from "../components/Button.svelte";
 	import Footer from "../components/Footer.svelte";
+	let name = "";
+	let email = "";
+	let telephone = "";
+	let msn = "";
 </script>
 
 <style>
@@ -59,23 +63,23 @@
 	<div class="inputContainer">
 		<div>
 			<Label label="Name">
-				<Input />
+				<Input bind:value="{name}" />
 			</Label>
 		</div>
 		<div>
 			<Label label="Email">
-				<Input />
+				<Input bind:value="{email}" />
 			</Label>
 		</div>
 		<div class="telephoneContainer">
 			<Label label="Telephone Number">
-				<Input />
+				<Input bind:value="{telephone}" />
 			</Label>
 		</div>
 	</div>
 	<div class="textarea">
 		<Label label="Message">
-			<Textarea />
+			<Textarea bind:value="{msn}" />
 		</Label>
 	</div>
 
